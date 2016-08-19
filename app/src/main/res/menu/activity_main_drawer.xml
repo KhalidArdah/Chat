@@ -4,23 +4,24 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_ip"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_account_circle_black_24dp"
             android:title="IP's and Ports" />
         <item
             android:id="@+id/nav_users"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_people_outline_black_24dp"
             android:title="Users" />
+        <item
+            android:id="@+id/nav_conversations"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="My Conversations" />
     </group>
 
     <item android:title="Profile">
         <menu>
-            <item
-                android:id="@+id/nav_profile"
-                android:icon="@drawable/ic_menu_share"
-                android:title="My Profile" />
+
             <item
                 android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
                 android:title="Logout" />
         </menu>
     </item>

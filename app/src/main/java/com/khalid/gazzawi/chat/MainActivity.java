@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
         IP_Port ip_port=new IP_Port();
-        UsersFragment usersFragment=new UsersFragment();
         fragmentTransaction.add(R.id.content_main,ip_port);
         fragmentTransaction.commit();
         // --------------
@@ -35,7 +34,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Implemented Later", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -73,7 +72,6 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
@@ -92,16 +90,38 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_ip) {
             // Handle the camera action
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            IP_Port ip_port=new IP_Port();
+            fragmentTransaction.replace(R.id.content_main,ip_port);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_users) {
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            UsersFragment u=new UsersFragment();
+            fragmentTransaction.replace(R.id.content_main,u);
+            fragmentTransaction.commit();
+        } else if (id == R.id.nav_conversations) {
 
-        } else if (id == R.id.nav_profile) {
-
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            Conversations c=new Conversations();
+            fragmentTransaction.replace(R.id.content_main,c);
+            fragmentTransaction.commit();
+//
         } else if (id == R.id.nav_logout) {
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            IP_Port ip_port=new IP_Port();
+            fragmentTransaction.replace(R.id.content_main,ip_port);
+            fragmentTransaction.commit();
+//
+
 
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
