@@ -7,10 +7,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Your Name..."
+        android:hint="User Name..."
         android:ems="10"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/my_name"
+        android:id="@+id/usr_name"
         android:layout_margin="10dp"
         />
 
@@ -18,18 +18,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Your Port..."
+        android:hint="User Port..."
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
-        android:id="@+id/my_port"
+        android:id="@+id/usr_port"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MY IP"
+        android:text="User IP"
         android:editable="false"
         android:layout_margin="10dp"
-        android:id="@+id/my_ip"
+        android:id="@+id/usr_ip"
         />
     <EditText
         android:layout_width="match_parent"
