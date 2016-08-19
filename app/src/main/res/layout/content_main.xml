@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="WEEEEE"
+        android:text="WEEEE"
         android:id="@+id/textView2"
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
